@@ -1,0 +1,114 @@
+
+body {
+    background-color: #f9c8f5; /* Светлый фон */
+    font-family: Arial, sans-serif; /* Шрифт */
+    text-align: center;
+}
+
+h1 {
+    color: rgb(19, 2, 61); 
+    font-weight: bold; /* Жирный текст */
+    font-size: 300%;
+    text-align: center; /* Центрируем текст */
+}
+h2 {
+    color: rgb(19, 2, 61); 
+    font-weight: bold; /* Жирный текст */
+    font-size: 250%;
+    text-align: center; /* Центрируем текст */
+}
+
+p {
+    color: rgba(22, 22, 23, 0.891);
+    font-size: 40px; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+    line-height: 1;
+    text-align:center;
+}
+a {font-size: 30px;}
+.box {
+    height: 100px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    margin: 5 px;
+    padding: 5px;
+    
+    }
+#info1 {
+    background-color: rgb(225, 255, 0);
+    }
+#info2 {
+    background-color: rgb(128, 0, 111);
+    }
+#info3 {
+    background-color: rgb(0, 2, 128);
+    }
+    .my_button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.1s;
+    }
+    .my_button:hover {
+        background-color: #b30009; 
+    }
+    .my_button:active {
+        background-color: #098500; 
+        transform: scale(0.95); 
+    }
+    #slider{
+        background-color:blueviolet;
+    }
+    .slider {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    font-family: Arial, sans-serif; /* Шрифт */
+    font-weight: bold;
+    text-align: left;
+    min-width: 100%;
+    height: 400px;
+    font-size: 30px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    color: rgb(16, 16, 16);
+    overflow: hidden; /* Убирает возможные переполнения */
+}
+
+/* Псевдоэлемент для фонового изображения */
+.slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/bg1.jpg'); /* Замените на URL ваших изображений */
+    background-size: cover; /* Масштабирует изображение, чтобы покрыть весь экран */
+    background-position: center; /* Центрирует изображение */
+    opacity: 0.7; /* Прозрачность, от 0 (прозрачный) до 1 (непрозрачный) */
+    z-index: -1; /* Помещает псевдоэлемент позади содержимого */
+}
+        .button-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    
+    
+
+
