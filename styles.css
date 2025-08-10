@@ -1,6 +1,9 @@
 
 body {
-    background-color: #f9c8f5; /* Светлый фон */
+    background-image: url('images/bg3.jpg'); /* Замените на URL ваших изображений */
+    background-size: cover; /* Масштабирует изображение, чтобы покрыть весь экран */
+    background-position: center; /* Центрирует изображение */
+    /*background-color: #f9c8f5; /* Светлый фон */
     font-family: Arial, sans-serif; /* Шрифт */
     text-align: center;
 }
@@ -24,6 +27,9 @@ p {
     font-weight: bold; /* Жирный текст */
     line-height: 1;
     text-align:center;
+}
+nav {
+    text-align: left;
 }
 a {font-size: 30px;}
 .box {
@@ -80,7 +86,7 @@ a {font-size: 30px;}
     font-weight: bold;
     text-align: left;
     min-width: 100%;
-    height: 400px;
+    height: 450px;
     font-size: 30px;
     box-sizing: border-box;
     padding: 20px;
@@ -107,8 +113,19 @@ a {font-size: 30px;}
             text-align: center;
             margin-top: 10px;
         }
-
-    
+.princ{
+    font-size: 5px;
+}
+#picture {/*для всех картинок, кроме маленького принца*/
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+#font31 {font-size: 28px;}
+#shop_place{font-size: 35px;}
+.slide i {
+display: block;
+}
     
 
 
